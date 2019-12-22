@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택 가능 폼 요소</title>
+</head>
+    <p>드롭다운 목록 만들기</p>
+    <p>option 태그로 선택목록을 만들 수 있다.</p>
+    <p>multiple태그로 여러 옵션 선택 가능하며, selected으로 기본 선택이 가능하다.</p>
+    <p>optgroup으로 옵션 끼리 묶는 것이 가능하다.</p>
+<hr>
+    <label class="reg" for="route">시내버스 노선</label>
+        <select id="route">
+            <optgroup label="서울시내버스">
+            <option value="bus704">서울버스 704</option>
+            <option value="bus705">서울버스 705</option>
+            <option value="bus708">서울버스 708</option>
+            <option value="bus741">서울버스 741</option>
+            <option value="bus773">서울버스 773</option>
+            <option value="bus774">서울버스 774</option>
+            <option value="bus9703">서울버스 9703</option>
+            <option value="bus9709">서울버스 9709</option>
+            </optgroup>
+            <optgroup label="경기도시내버스">
+            <option value="bus17">경기버스 17</option>
+            <option value="bus30">경기버스 30</option>
+            <option value="bus34">경기버스 34</option>
+            <option value="bus733">경기버스 733</option>
+            <option value="bus360">경기버스 360</option>
+            <option value="bus567">경기버스 567</option>
+            <option value="bus790">경기버스 790</option>
+            <option value="bus799">경기버스 799</option>
+            <option value="bus9710">경기버스 9710</option>
+            </optgroup>
+        </select>
+
+        </select>
+    <hr>
+    <input type="text" id="transportation" list="choices">
+    <datalist id="choices">
+        <option value="bus704" label="서울버스 704"></option>
+        <option value="bus705" label="서울버스 705"></option>
+        <option value="bus708" label="서울버스 708"></option>
+        <option value="bus741" label="서울버스 741"></option>
+        <option value="bus773" label="서울버스 773"></option>
+        <option value="bus774" label="서울버스 774"></option>
+        <option value="bus9703" label="서울버스 9703"></option>
+        <option value="bus9709" label="서울버스 9709"></option>
+    </datalist>
+
+    <hr>
+    <textarea name="intro" cols="60" rows="5">
+        퉁퉁YEE☆ 셰끼와
+        BE시리☆ 셰끼다!
+        어29.. 이게지금 뭐하는 거야?
+        이런 니미쌍!
+    </textarea>
+
+    <hr>
+    <form>
+        <select>
+            <option>초급</option>
+            <option>중급</option>
+            <option>고급</option>
+        </select>
+    </form>
+
+<body>
+
+</body>
+</html>

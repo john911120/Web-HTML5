@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input 태그 연습 3번째</title>
+</head>
+<h1>회원가입</h1>
+<p>회원가입 폼 예제</p>
+<ul>
+    <li>
+        <label class="reg" for="unname">이름</label>
+        <input type="text" id="unname" autofocus required>
+    </li>
+
+    <li>
+        <label for="mail">메일 주소</label>
+        <input type="email" id="mail">
+    </li>
+    <li>
+        <label class="reg" for="phone">연락처</label>
+        <input type="text" id="phone" placeholder="하이픈없이 입력">
+    </li>
+    <li>
+        <label for="homep">홈페이지/블로그</label>
+        <input type="url" id="homep">
+    </li>
+</ul>
+<hr>
+<hr>
+<form>
+    <label>한 줄 댓글 : <input type="text" size="60"></label>
+</form>
+
+    <hr>
+    <p> 읽기 전용 필드 만들기</p>
+    <label class="reg" for="subject">영어회화(중급)</label>
+    <input type="text" id="subject" value="오전 09:00 ~ 오후 11:30" readonly>
+
+    <hr>
+    <p>필수 필드 지정하기</p>
+    <label class="reg" for="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+
+    <hr>
+    <p>최대값, 최소값, 스텝</p>
+    <label class="reg" for="group">단체주문</label>
+    <input type="number" id="group" value="10" min="10" max="100" step="10">
+
+    <hr>
+    <p>길이, 최소길이, 최대길이 속성지정</p>
+    <label>아이디:<input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label>
+    <small style="color:red;">4~15자리 이내의 영문과 숫자</small>
+<body>
+
+</body>
+</html>
